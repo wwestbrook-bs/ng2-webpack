@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import '../../../../public/css/style.css';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,6 +9,6 @@ import '../../../../public/css/style.css';
 })
 
 export class AppComponent {
-  title = 'ng2 Application';
+  title = 'ng2 Boiler Plate';
 }
 
