@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ng2-webpack by wwestbrook</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Ng2-webpack</h1>
+        <p>an easy to use starter for Angular 2 and Webpack</p>
+
+        <p class="view"><a href="https://github.com/wwestbrook/ng2-webpack">View the Project on GitHub <small>wwestbrook/ng2-webpack</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/wwestbrook/ng2-webpack/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/wwestbrook/ng2-webpack/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/wwestbrook/ng2-webpack">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="ng2-webpack" class="anchor" href="#ng2-webpack" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ng2-webpack</h1>
+
+<p><strong>Note: This guide has been shamelessly stolen from <a href="https://github.com/preboot/angular2-webpack">Preboot's angular2-webpack</a>, <a href="https://github.com/AngularClass/angular2-webpack-starter">AngularClass' angular2-webpack-starter</a> and <a href="https://angular.io/docs/ts/latest/guide/webpack.html">Angular.io using Webpack tutorial</a>.  If you need a more robust starter or a starter with testing "out of the box" then please use one of those great starters.</strong></p>
+
+<p><strong>Note 2: I am still new to Angular and have left out testing to keep this starter as simple as possible.  I plan to add it in at some point in the future.</strong></p>
+
+<p>An easy to use and understand starter template for <a href="http://angular.io">Angular 2</a> with <a href="http://webpack.github.io/">Webpack</a>.</p>
+
+<p>This seed repo serves as an Angular 2 starter for anyone looking to get up and running with Angular 2 and TypeScript fast. Using <a href="http://webpack.github.io/">Webpack</a> for building our files and assisting with boilerplate. </p>
+
+<ul>
+<li>Ready to go build system using <a href="https://webpack.github.io/docs/">Webpack</a> for working with <a href="http://www.typescriptlang.org/">TypeScript</a>.</li>
+<li>Separate application config object per environment.</li>
+<li>Stylesheets with SCSS (not required, it supports regular css too.  Less and Sass are good to as long as you wire up the install and wire up a loader).</li>
+<li>Error reported with <a href="http://palantir.github.io/tslint/">TSLint</a> and <a href="https://github.com/mgechev/codelyzer">Codelyzer</a>.</li>
+<li>Documentation with <a href="http://typedoc.org/">TypeDoc</a>.</li>
+</ul>
+
+<blockquote>
+<p>Warning: Make sure you're using the latest version of Node.js and NPM</p>
+</blockquote>
+
+<h3>
+<a id="quick-start" class="anchor" href="#quick-start" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Quick start</h3>
+
+<blockquote>
+<p>Clone/Download the repo then edit <code>app.ts</code> inside <a href="/src/app/app.component.ts"><code>/src/app/app.component.ts</code></a></p>
+</blockquote>
+
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"># clone our repo</span>
+$ git clone https://github.com/wwestbrook/ng2-webpack.git my-app
+
+<span class="pl-c"># change directory to your app</span>
+$ <span class="pl-c1">cd</span> my-app
+
+<span class="pl-c"># install the dependencies with npm</span>
+$ npm install
+
+<span class="pl-c"># start the server</span>
+$ npm start</pre></div>
+
+<p>go to <a href="http://localhost:8080">http://localhost:8080</a> in your browser.</p>
+
+<h1>
+<a id="table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Table of Contents</h1>
+
+<ul>
+<li>
+<a href="#getting-started">Getting Started</a>
+
+<ul>
+<li><a href="#dependencies">Dependencies</a></li>
+<li><a href="#installing">Installing</a></li>
+<li><a href="#developing">Developing</a></li>
+<li><a href="#production">Production</a></li>
+<li><a href="#documentation">Documentation</a></li>
+</ul>
+</li>
+<li><a href="#typescript">TypeScript</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+
+<h1>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting Started</h1>
+
+<h2>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dependencies</h2>
+
+<p>What you need to run this app:</p>
+
+<ul>
+<li>
+<code>node</code> and <code>npm</code> </li>
+<li>Ensure you're running Node (<code>v6.x.x</code>+) and NPM (<code>3.x.x</code>+)</li>
+</ul>
+
+<h2>
+<a id="installing" class="anchor" href="#installing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing</h2>
+
+<ul>
+<li>
+<code>fork</code> this repo</li>
+<li>
+<code>clone</code> your fork</li>
+<li>
+<code>npm install</code> to install all dependencies</li>
+</ul>
+
+<h2>
+<a id="developing" class="anchor" href="#developing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Developing</h2>
+
+<p>After you have installed all dependencies you can now start developing with:</p>
+
+<ul>
+<li>
+<code>npm start:dev</code> </li>
+</ul>
+
+<p>It will start a local server using <code>webpack-dev-server</code> which will watch, build (in-memory), and reload for you. The application can be checked at <code>http://localhost:8080</code>.</p>
+
+<p>As an alternative, you can work using Webpack Dashboard:</p>
+
+<ul>
+<li><code>npm run serve:dev</code></li>
+</ul>
+
+<h2>
+<a id="production" class="anchor" href="#production" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Production</h2>
+
+<p>To build your application, run:</p>
+
+<ul>
+<li><code>npm run build</code></li>
+</ul>
+
+<p>You can now go to <code>/dist</code> and deploy that to your server!</p>
+
+<h2>
+<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Documentation</h2>
+
+<p>You can generate api docs (using <a href="http://typedoc.org/">TypeDoc</a>) for your code with the following:</p>
+
+<ul>
+<li><code>npm run docs</code></li>
+</ul>
+
+<h1>
+<a id="faq" class="anchor" href="#faq" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FAQ</h1>
+
+<h4>
+<a id="do-i-need-to-add-script--link-tags-into-indexhtml-" class="anchor" href="#do-i-need-to-add-script--link-tags-into-indexhtml-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Do I need to add script / link tags into index.html ?</h4>
+
+<p>No, Webpack will add all the needed Javascript bundles as script tags and all the CSS files as link tags. The advantage is that you don't need to modify the index.html every time you build your solution to update the hashes.</p>
+
+<h4>
+<a id="how-to-include-external-angular-2-libraries-" class="anchor" href="#how-to-include-external-angular-2-libraries-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to include external angular 2 libraries ?</h4>
+
+<p>It's simple, just install the lib via npm and import it in your code when you need it. Don't forget that you need to configure some external libs in the <a href="https://github.com/preboot/angular2-webpack/blob/master/src/main.ts">bootstrap</a> of your application.</p>
+
+<h4>
+<a id="how-to-include-external-css-files-such-as-bootstrapcss-" class="anchor" href="#how-to-include-external-css-files-such-as-bootstrapcss-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to include external css files such as bootstrap.css ?</h4>
+
+<p>Just install the lib and import the css files in <a href="https://github.com/preboot/angular2-webpack/blob/master/src/vendor.ts">vendor.ts</a>. For example this is how to do it with bootstrap:</p>
+
+<div class="highlight highlight-source-shell"><pre>npm install bootstrap@next --save</pre></div>
+
+<p>And in <a href="https://github.com/preboot/angular2-webpack/blob/master/src/vendor.ts">vendor.ts</a> add the following:</p>
+
+<div class="highlight highlight-source-ts"><pre><span class="pl-k">import</span> <span class="pl-s">'bootstrap/dist/css/bootstrap.css'</span>;</pre></div>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/wwestbrook">wwestbrook</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
