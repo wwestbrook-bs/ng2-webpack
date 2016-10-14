@@ -1,4 +1,4 @@
-<app-navigation-menu [title] = "title"></app-navigation-menu>
+<app-navigation-menu [appName] = "appName"></app-navigation-menu>
 
 <div class="container" style="padding-top: 60px">
   
@@ -7,6 +7,6 @@
 </div>
 <footer class="footer">
   <div class="container">
-    <p class="text-muted">Footer</p>
+    <p *ngIf="isDevMode" class="text-muted">Application is running in development mode.</p>
   </div>
 </footer>

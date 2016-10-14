@@ -50,17 +50,8 @@ module.exports = {
 
   plugins: [
     new DashboardPlugin(),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: ['app', 'vendor', 'polyfills']
-    }),
-
-    new HtmlWebpackPlugin({
-      template: 'src/index.html',
-      favicon: 'src/favicon.ico'
-    }),
-    new webpack.ProvidePlugin({
-           $: "jquery",
-           jQuery: "jquery"
-       })
+    new webpack.optimize.CommonsChunkPlugin({ name: ['app', 'vendor', 'polyfills']}),
+    new HtmlWebpackPlugin({ template: 'src/index.html', favicon: 'src/favicon.ico'}),
+    new webpack.ProvidePlugin({ $: "jquery", jQuery: "jquery" })
   ]
 };

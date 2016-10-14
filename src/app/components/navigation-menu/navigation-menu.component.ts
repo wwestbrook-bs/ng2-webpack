@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class NavigationMenuComponent {
 
-  @Input() title: string;
+  @Input() appName: string;
 
   constructor() { }
 }
