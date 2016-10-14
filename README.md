@@ -10,6 +10,7 @@ This seed repo serves as an Angular 2 starter for anyone looking to get up and r
 
 * Ready to go build system using [Webpack](https://webpack.github.io/docs/) for working with [TypeScript](http://www.typescriptlang.org/).
 * Separate application config object per environment.
+* Bootstrap included and ready!
 * Stylesheets with SCSS (not required, it supports regular css too.  Less and Sass are good to as long as you wire up the install and wire up a loader).
 * Error reported with [TSLint](http://palantir.github.io/tslint/) and [Codelyzer](https://github.com/mgechev/codelyzer).
 * Documentation with [TypeDoc](http://typedoc.org/).
