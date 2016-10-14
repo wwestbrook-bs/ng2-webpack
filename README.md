@@ -22,7 +22,7 @@ This seed repo serves as an Angular 2 starter for anyone looking to get up and r
 
 ```bash
 # clone our repo
-$ git clone https://github.com/preboot/angular2-webpack.git my-app
+$ git clone https://github.com/wwestbrook/ng2-webpack.git my-app
 
 # change directory to your app
 $ cd my-app
@@ -51,8 +51,8 @@ go to [http://localhost:8080](http://localhost:8080) in your browser.
 ## Dependencies
 
 What you need to run this app:
-* `node` and `npm` (Use [NVM](https://github.com/creationix/nvm))
-* Ensure you're running Node (`v5.x.x`+) and NPM (`3.x.x`+)
+* `node` and `npm` 
+* Ensure you're running Node (`v6.x.x`+) and NPM (`3.x.x`+)
 
 ## Installing
 
