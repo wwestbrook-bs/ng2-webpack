@@ -11,6 +11,7 @@ import '../../../../public/css/style.css';
 export class AppComponent implements OnInit {
   appName: string = 'ng2 Boiler Plate';
   isDevMode: boolean;
+  appConfig: Object;
 
   ngOnInit() {
     // console.log(process.env.NODE_ENV);
@@ -19,6 +20,9 @@ export class AppComponent implements OnInit {
     } else {
       this.isDevMode = false;
     }
+
+    this.appConfig = require('webpack-config-loader!../../../app.config');
+     console.log('application configuration loaded ', this.appConfig);
   }
 }
 

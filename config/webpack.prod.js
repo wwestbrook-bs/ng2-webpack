@@ -19,7 +19,10 @@ module.exports = webpackMerge(commonConfig, {
   htmlLoader: {
     minimize: false // workaround for ng2
   },
-
+  loader: {
+    // This data is used by the webpack-config-loader
+    configEnvironment: ENV // <-- Set this to what you want to use
+  },
   plugins: [
     new webpack.NoErrorsPlugin(),
     new webpack.optimize.DedupePlugin(),

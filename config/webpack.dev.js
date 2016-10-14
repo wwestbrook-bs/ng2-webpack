@@ -16,7 +16,10 @@ module.exports = webpackMerge(commonConfig, {
     filename: '[name].js',
     chunkFilename: '[id].chunk.js'
   },
-
+  loader: {
+    // This data is used by the webpack-config-loader
+    configEnvironment: ENV // <-- Set this to what you want to use
+  },
   plugins: [
     new ExtractTextPlugin('[name].css'),
     new webpack.DefinePlugin({'process.env': {'ENV': JSON.stringify(ENV) }})

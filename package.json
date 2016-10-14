@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --config config/webpack.dev.js --inline --progress --port 8080 --watch",
-    "server": "webpack-dashboard -- webpack-dev-server --config config/webpack.dev.js  --inline --port 8080",
+    "start": "webpack-dev-server--inline --progress --port 8080 --watch",
+    "start:dev": "webpack-dev-server --config config/webpack.dev.js --inline --progress --port 8080 --watch",
+    "server": "webpack-dashboard -- webpack-dev-server --inline --port 8080",
+    "server:dev": "webpack-dashboard -- webpack-dev-server --config config/webpack.dev.js  --inline --port 8080",
+    "server:prod": "webpack-dashboard -- webpack-dev-server --config config/webpack.prod.js  --inline --port 8080",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail"
   },
   "author": "woodie westbrook",
@@ -48,6 +51,7 @@
     "typescript": "^2.0.3",
     "typings": "^1.3.2",
     "webpack": "^1.13.0",
+    "webpack-config-loader": "^0.1.0",
     "webpack-dashboard": "^0.2.0",
     "webpack-dev-server": "^1.14.1",
     "webpack-merge": "^0.14.0"

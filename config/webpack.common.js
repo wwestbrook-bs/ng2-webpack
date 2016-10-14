@@ -44,7 +44,7 @@ module.exports = {
         test: /\.scss$/,
         include: path.resolve(__dirname, '../src/app'),
         loader: 'raw'
-      }
+      },
     ]
   },
 
