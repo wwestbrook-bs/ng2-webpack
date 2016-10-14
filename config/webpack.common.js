@@ -2,6 +2,7 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var helpers = require('./helpers');
+var path = require('path');
 
 module.exports = {
   entry: {
@@ -35,7 +36,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        include: helpers.root('src', 'app', 'components', 'app'),
+        include: path.resolve(__dirname, '../src/app'),
         loader: 'raw'
       }
     ]
