@@ -1,4 +1,12 @@
-<div class="container">
-  <h1>Hello from ng2 with Webpack</h1>
-  <img src="../../../../public/images/angular.png">
+<app-navigation-menu [title] = "title"></app-navigation-menu>
+
+<div class="container" style="padding-top: 60px">
+  
+  <router-outlet></router-outlet>
+
 </div>
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted">Footer</p>
+  </div>
+</footer>
